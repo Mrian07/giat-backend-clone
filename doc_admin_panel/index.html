@@ -1,0 +1,382 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>GoTaxi App 1.0.3 - Admin Panel Configuration</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Androgo Developer">
+	<meta name="copyright" content="Androgo Developer">
+	<meta name="generator" content="Documenter v1.0 http://rxa.li/documenter">
+	<meta name="date" content="2018-06-31T00:00:00+03:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	<script>
+		$(function() {
+       $('a[href*="#"]:not([href="#"])').click(function() {
+         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+           var target = $(this.hash);
+           target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html, body').animate({
+               scrollTop: target.offset().top
+             }, 300);
+             return false;
+           }
+         }
+       });
+     });
+	</script>
+	
+	<style>
+		html{background-color:#EEEEEE;color:#383838;}
+		::-moz-selection{background:#333636;color:#00DFFC;}
+		::selection{background:#333636;color:#00DFFC;}
+		#documenter_sidebar #documenter_logo{background-image:url(assets/images/image_6.png);}
+		a{color:#008C9E;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #008C9E, #006673);
+			  background-image: -ms-linear-gradient(top, #008C9E, #006673);
+			  background-image: -webkit-gradient(linear, 0 0, 0 008C9E%, from(#343838), to(#006673));
+			  background-image: -webkit-linear-gradient(top, #008C9E, #006673);
+			  background-image: -o-linear-gradient(top, #008C9E, #006673);
+			  background-image: linear-gradient(top, #008C9E, #006673);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#008C9E', endColorstr='#006673', GradientType=0);
+			  border-color: #006673 #006673 #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #008C9E #008C9E #bfbfbf;
+		  background-color: #006673;
+		}
+		hr{border-top:1px solid #D4D4D4;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#343838;color:#FFFFFF;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #494F4F;-moz-text-shadow:1px 1px 0px #494F4F;text-shadow:1px 1px 0px #494F4F;}
+		#documenter_sidebar ul{border-top:1px solid #212424;}
+		#documenter_sidebar ul a{border-top:1px solid #494F4F;border-bottom:1px solid #212424;color:#FFFFFF;}
+		#documenter_sidebar ul a:hover{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_sidebar ul a.current{background:#333636;color:#00DFFC;border-top:1px solid #333636;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-android-gotaxi-app-300">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#about_the_files" title="About the Files">About the Files</a></li>
+			<li><a href="#getting_started" title="Getting Started">Getting Started</a></li>
+			<li><a href="#database_creation" title="Database Creation">Database Creation</a></li>
+			<li><a href="#import_database_sql_file" title="Import Database .sql file">Import Database .sql file</a></li>
+			<li><a href="#upload_php_scripts_and_database_configuration" title="Upload PHP Scripts and Database Configuration">Upload PHP Scripts and Database Configuration</a></li>
+			<li><a href="#setting_base_url" title="RTL (Right To Left) Mode">Setting Base URL</a></li>
+			<li><a href="#check_database_connection" title="Check Database Connection">Setting WebMail</a></li>
+			<li><a href="#update" title="Rating">Update Play Store</a></li>
+			<li><a href="#rating" title="Rating">Rating</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Androgo 2018<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>GoTaxi App 1.0.3</h1>
+	<h2>Admin Panel Configuration</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>created: 20/06/2018</li>
+	<li>latest update: 25/12/2018</li>
+	<li>by: Androgo Design</li>
+	<li><a href=""></a></li>
+	<li>email: <a href="mailto:salesgotaxi@gmail.com">salesgotaxi@gmail.com</a></li>
+	</ul>
+	<p>Thank you for purchasing my app. If you have any questions that are beyond the scope of this help file and <a href="http://gotaxi.biz/index.php/c_utama/help_center">(HELP CENTER)</a>, please feel free to email via my user page contact form here. Thanks so much!</p>
+	</section>
+	
+	<section id="about_the_files">
+	<div class="page-header"><h3>About the Files</h3><hr class="notop"></div>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	GoTaxi App is a online taxi system which run under Android platform that used for your own online taxi application. 
+
+ This application created by Android for client side and then codeIgniter for Admin side. Run under Android platform which is the most popular operating system in the world.
+
+Using this application you can save your money and time in creating application for your own online taxi application.</p>
+</section>
+<section id="getting_started">
+	<div class="page-header"><h3>Getting Started</h3><hr class="notop"></div>
+<div>
+	<div>
+		<div>
+			Before doing installation, you need to do the following things :</div>
+		<div>
+			&nbsp;</div>
+		<div>
+			Have a web hosting to store admin panel files and Mysql database, to run this admin panel, web hosting that you use must have the following requirements :</div>
+		<ul>
+			<li>
+				PHP Version 5.6 or 7.0</li>
+			<li>
+				Support Mysqli</li>
+				<li>
+				Hosting Server use hostinger.com <b>(we highly recommend using hostinger.com)</b></li>
+		    <li>The gotaxi script does not work on the Panel PLESK and VPS. Support CPANEL HOSTINGER.COM!!</li>
+		</ul>
+		<div>
+			&nbsp;</div>
+			
+		<div>
+		<b>Please login on your cpanel account</b><p>
+		<ul>
+		<li>enter your username and your password</li>
+		</ul></p>
+			</div>
+		<div>
+			&nbsp;</div>
+		<div>
+			<ul>
+			
+			</ul>
+		</div>
+	</div>
+</div>
+<p>
+	<img alt="" src="assets/images/image_4.jpg" style="width: 400px; height: 354px;"></p>
+<p>
+	<img alt="" src="assets/images/image_9.jpg" style="width: 1024px; height: 458px;"></p>
+</section>
+<section id="database_creation">
+	<div class="page-header"><h3>Database Creation</h3><hr class="notop"></div>
+<div>
+	<div>
+		<div>
+			1.&nbsp;Login to your cpanel hosting and open&nbsp;<strong>MySQL Databases</strong></div>
+		<div>
+			2.&nbsp;Create database and give database name like you want, as example : &#39;<strong>Gotaxi_app_db</strong>&rsquo;</div>
+		<div>
+			3. Create user for your database</div>
+		<div>
+			4. Add user to your database and check&nbsp;<strong>ALL PRIVILEGES</strong></div>
+	</div>
+</div>
+<p>
+	<img alt="" src="assets/images/image_10.jpg" style="width: 600px; height: 333px;"></p>
+<p>
+	<img alt="" src="assets/images/image_1.jpg" style="width: 600px; height: 342px;"></p>
+<p>
+	<img alt="" src="assets/images/image_2.jpg" style="width: 600px; height: 533px;"></p>
+</section>
+<section id="import_database_sql_file">
+	<div class="page-header"><h3>Import Database .sql file</h3><hr class="notop"></div>
+<div>
+	<div>
+		<div>
+			1. Open&nbsp;<strong>phpMyAdmin&nbsp;</strong>and select your database</div>
+	</div>
+</div>
+<div>
+	2. Import file database&nbsp;<strong>gotaxi_app_db.sql</strong> &nbsp;from download package inside &#39;<strong>admin_panel</strong>&#39; folder</div>
+<div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="assets/images/image_7.jpg" style="width: 600px; height: 569px;"></div>
+<div>
+	&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	
+</section>
+<section id="upload_php_scripts_and_database_configuration">
+	<div class="page-header"><h3>Upload PHP Scripts and Database Configuration</h3><hr class="notop"></div>
+<div>
+	1. open File Manager via cpanel or ftp server, upload <strong>gotaxi_app.zip </strong>inside &#39;<strong>admin_panel</strong>&#39; folder to your folder destination on your hosting, then extract it</div>
+<p><div>
+	2. to change configuration please folder see :<strong><p>
+      A) admin : public_html/admin/application/config/database.php</div>
+	  B) api : public_html/api/app/config/database.php <p>
+	  C) application : public_html/application/config/database.php <p>
+	  D) frontend : public_html/frontend/application/config/database.php <p>
+	  E) partner : public_html/partner/application/config/database.php <p></strong>
+<div>
+<div>
+	<img alt="" src="assets/images/image_11.jpg"  ></div>
+	
+	<p>3. you must edit this data with your own data.</div>
+<div>
+	&nbsp;</div>
+<div>
+	<img alt="" src="assets/images/image_8.jpg"  ></div>
+<div>
+	&nbsp;</div>
+
+</section>
+<section id="setting_base_url">
+	<div class="page-header"><h3>Setting Base URL CodeIgniter</h3><hr class="notop"></div>
+
+	<div>
+	to change configuration please base URL is set in the config.php file like :<strong><p>
+      A) admin : public_html/admin/application/config/config.php</div>
+	  B) api &nbsp;: default<p>
+	  C) application : public_html/application/config/config.php <p>
+	  D) frontend : public_html/frontend/application/config/config.php <p>
+	  E) partner : public_html/partner/application/config/config.php <p></strong>
+	
+	<div>
+	<img alt="" src="assets/images/image_12.jpg"  ></div><p>
+	
+	<div>
+	Default User Login Admin Panel</div> <p>
+<div>
+   - address  &nbsp; <strong>&nbsp;: http://yourdomain.com/admin</strong><p>
+	- Username&nbsp; <strong>&nbsp;: admin@test.com</strong></div>
+<div>
+	- Password&nbsp; &nbsp; :<strong> admin</strong></div>
+<div>
+	&nbsp;</div>
+</section>
+<section id="check_database_connection">
+	<div class="page-header"><h3>Setting WebMail Server for Driver Validation</h3><hr class="notop"></div>
+	
+	<div><h4><strong>A. Driver Validation</strong><h4></div> <p>
+	
+<div>
+	<div>
+		To send an email regarding the approval of the driver, then you must create webmail from the your hosting&nbsp;</div>
+	<div>
+		&nbsp;</div>
+		
+		<div>
+		to change configuration please folder see :</div><p>
+		<div>
+		<strong>public_html/admin/application/controllers/Validatedriver.php </strong></div> <p>
+		
+		<div>
+	<img alt="" src="assets/images/image_13.jpg"  ></div><p>
+	
+	<div>
+		Please also change the hosting email address <strong>(smtp_user)</strong> at line 349, 398 and 423&nbsp;</div><br>
+	
+	<div>
+		<h4>1)&nbsp; Now open book.php in folder <strong>(api->app->controller)</strong> and change the following:</h4>
+	<li>
+			A) <b>Add Your URL</b> on the line 1463 => "http://<strong>YOUR_URL</strong>/api/book/send_cancel_signal/".$idDriver."/".$idUser."/".$idTrans);</li>
+			<p>
+			<img src="assets/images/image_15.jpg" alt="HTML Structure" style="width: 746px; height: 571px";/></p>
+			
+			
+			<li>
+			B) <b>Add Your DIRECTORY</b> on the line 345 => <b>$url_foto = '/home/XXXXXXXX/public_html/asset/berkas_struk_mmart/';</b>;</li><br>
+			<img src="assets/images/image_20.jpg" alt="HTML Structure" style="width: 746px; height: 571px";/></p>
+			
+			<li>
+		
+			C). <b>Add Your DIRECTORY</b> on the line 399 => <b> $url_foto = '/home/XXXXXXXX/public_html/asset/berkas_struk_mfood/'; </b>';</li>
+			<img src="assets/images/image_21.jpg" alt="HTML Structure" style="width: 746px; height: 571px";/></p>
+			<p>
+			
+			
+			<h4>2)&nbsp; Now open driver.php in folder <strong>(api->app->controller)</strong> and change the following:</h4>
+			<li>
+			add your DIRECTORY on the line 113 => <b>$url_foto = 'YOUR_DIRECTORY/admin/fotodriver/'</b>;</li><br>
+			<li>
+			add your DIRECTORY on the line 366 => <b>$url_foto = 'YOUR_DIRECTORY/asset/berkas_topup/driver/ </b>';</li>
+			<p>
+				<img src="assets/images/image_16.jpg" alt="HTML Structure" style="width: 746px; height: 671px";/></p>
+				<p>
+				<img src="assets/images/image_17.jpg" alt="HTML Structure" style="width: 546px; height: 271px";/></p>
+				<h4>3)&nbsp; Now open pelanggan.php in folder <strong>(api->app->controller)</strong> and change the following:</h4>
+				<li>
+			add your DIRECTORY on the line 358 => $url_foto = 'YOUR_DIRECTORY/api/assets/berkas_topup/user/';</li>
+			<p>
+				<img src="assets/images/image_18.jpg" alt="HTML Structure" style="width: 746px; height: 671px";/></p>
+				
+				
+				
+				
+				
+		
+	<div><h4><strong>B. Forgot Password</strong><h4></div> <p>
+<div>
+		to change configuration please folder see :</div><p>
+		
+		<div>public_html/application/models/M_upload.php --> line 121-126 and 210-213  </div>
+	
+	<p>
+	&nbsp;</p>
+</section>
+
+<section id="update">
+	<div class="page-header"><h3>Update Play Store</h3><hr class="notop"></div>
+<p>
+	<div>If you update apps and submit to a play store, users will be forced to update apps.
+
+This feature can be enabled if you change the value based on the latest version of your application.</strong></span></p>
+
+<div> Open <strong>phpMyAdmin</strong> and select the "app_versions" table. <p> 1) Please change the version value according to the latest version of your application.</div>
+
+<p>
+
+	<div>
+	<img alt="" src="assets/images/image_14.jpg"  ></div><p>
+	
+	2) Now open Driver.php in folder ( ../api/app/controllers/Driver.php ) and change the following: <br>
+	<b>Replace the text on line 339</b><br><br>
+	
+	<img src="assets/images/image_19.jpg" alt="HTML Structure" style="width: 946px; height: 671px";/><p>
+	
+	3) Now open Pelanggan.php in folder ( ../api/app/controllers/Pelanggan.php ) and change the following: <br>
+	<b>Replace the text on line 1133</b><br><br>
+	
+	<img src="assets/images/image_22.jpg" alt="HTML Structure" style="width: 946px; height: 671px";/><p>
+	
+	<p>
+	&nbsp;</p>
+<hr>
+<p>
+
+</section>
+
+
+
+<section id="rating">
+	<div class="page-header"><h3>Rating Now</h3><hr class="notop"></div>
+<p>
+	<span style="color: rgb(56, 56, 56); font-family: Arial, verdana, arial, sans-serif; line-height: 18px;">If you like our app, we will highly appreciate if you can provide us a rating of 5. You can rate us from your CodeCanyon Menu &rarr;&nbsp;<strong><a href="http://codecanyon.net/downloads">Download page.</a></strong></span></p>
+<p>
+	&nbsp;</p>
+<hr>
+<p>
+	</p>
+</section>
+
+	</div>
+</body>
+</html>
